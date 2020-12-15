@@ -23,4 +23,8 @@ function calcularMedia($notas)
     }
 }
 
-echo "A nota media do aluno = " . calcularMedia($notas);
+if (calcularMedia($notas) >= 6) {
+    echo "A nota media do aluno = " . calcularMedia($notas) . " aprovado";
+} else {
+    echo "A nota media do aluno = " . calcularMedia($notas) . " reprovado";
+}
